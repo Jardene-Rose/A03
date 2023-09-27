@@ -1,0 +1,12 @@
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+body{
+    /* Default font size, equals 1rem */
+    font-size: 20xp;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    background-color: red;
+}
