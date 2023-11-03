@@ -1,7 +1,10 @@
 @import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
 
-body{
-    /* Default font size, equals 1rem */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-size: 12xp;
     font-family: segoe UI;
     color: #b3956b;
@@ -9,13 +12,14 @@ body{
 
     margin-top: 40px;
     margin-left: 50px;
+    
 }
 
 h1 {
-    /* Have another comment*/
     font-size: 5rem;
     font-weight: 600;
     text-align: left;
+    padding-bottom: 30px;
 }
 
 h2 {
@@ -28,67 +32,155 @@ h2 {
 h3 {
     font-size: 1.5rem;
     text-align: left;
+    padding-top: 100px;
 }
 
 p {
     text-align: justify;
+    padding-top: 20px;
     width: 562px;
 }
 
 /* For menu button highlight*/
 
-#menuBar {
-    margin-top: 50px;
-    margin-right: 50px;
-
-    border-style: solid none;
-    border-width: 3px;
-    border-color: #b3956b;
-}
-
 .btn {
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
+    text-decoration: none;
     color: #b3956b;
 
     border: none;
     outline: none;
 
     display: inline-block;
-    width: 280px;
+    width: 230px;
+    padding-left: 10px;
+    padding-right: 0px;
     padding-top: 10px;    
     padding-bottom: 10px;
     background-color: #e5f0ff;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.active, .btn:hover {
+.btn:hover {
     background-color: #edf5ff;
 }
 
-/* For menu sticky */
+.active {
+    background-color: #edf5ff;
+}
+
+/* For sticky menu */
+
+#menuBar {
+    margin-top: 0px;
+}
+
+#margin {
+    background-color: #e5f0ff;
+    border-style: solid none;
+    border-width: 3px;
+    border-color: #b3956b;
+}
 
 .sticky {
     position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Paragraph Elements*/
 
-#chapterSpace {
-    border: solid;
-    border-width: 2px;
-    border-color: white;
-
-    margin-right: 50px;
+.chapterSpace {
     margin-top: 500px;
     margin-bottom: 100px;
+    margin-right: 50px;
 }
 
-#diagramSpace {
-    border: solid;
-    border-width: 2px;
-    border-color: black;
-    
-    height: 300px;
+.flexContainerOne {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 400px;
     width: 100%;
+}
+
+.flexContainerTwo {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+
+    height: 400px;
+    width: 100%;
+}
+
+/* First Paragraph (window) Diagram */
+
+.flexContainer > div {
+    transition: 0.3s;
+}
+
+.windowPane {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #b3956b;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    width: 200px;
+    height: 200px;
+
+    background-color: #edf5ff;
+}
+
+.window {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #b3956b;
+
+    width: 178px;
+    height: 178px;
+
+    margin: 10px;
+}
+
+#triangle01 {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 30px solid #b3956b;
+    border-bottom: 25px solid transparent;  
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#triangle01:hover {
+    border-right: 30px solid #8d7655;
+}
+
+#triangle02 {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 30px solid #b3956b;
+    border-bottom: 25px solid transparent;  
+    margin-left: 20px; 
+    cursor: pointer;
+}
+
+#triangle02:hover {
+    border-left: 30px solid #8d7655;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
 }

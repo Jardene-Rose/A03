@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>Architecture</title>
+        <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
     </head>
@@ -10,47 +11,65 @@
         <h2>Towards a new</h2>
         <h1>ARCHITECTURE</h1>
         <!--Menu-->
-        <div class="header" id="menuBar">
-            <button class="btn">WINDOW</button>
-            <button class="btn">PILOTIS</button>
-            <button class="btn">FACADE</button>
-            <button class="btn">ROOF</button>
-            <button class="btn">PLAN</button>
+        <div id="menuBar">
+            <div id="margin">
+                <a href="#window" class="btn">WINDOW</a>
+
+                <a href="#pilotis" class="btn">PILOTIS</a>
+    
+                <a href="#facade" class="btn">FACADE</a>
+    
+                <a href="#roof" class="btn">ROOF</a>
+    
+                <a href="#plan" class="btn">PLAN</a>
+            </div>
         </div>
 
-        <!--First Paragraph-->
-        <div id="chapterSpace">
+        <!--First Paragraph (window)-->
+        <div class="chapterSpace" id="window">
             <h3>WINDOW</h3>
-            <div id="diagramSpace"></div>
+            <div class="flexContainerOne">
+                <div id="triangle01"></div><div class="windowPane hidden"><div class="window"></div></div><div class="windowPane hidden"><div class="window"></div></div><div class="windowPane hidden"><div class="window"></div></div><div class="windowPane hidden"><div class="window"></div></div><div class="windowPane hidden"><div class="window"></div></div><div id="triangle02"></div>
+            </div>
+            
             <p>The horizontal window. Together with the intermediate ceilings the supports form rectangular openings in the façade through which light and air enter copiously. The window extends from support to support and thus becomes a horizontal window. Stilted vertical windows consequently disappear, as do unpleasant mullions. In this way, rooms are equably lit from wall to wall. Experiments have shown that a room thus lit has an eight times stronger illumination than the same room lit by vertical windows with the same window area. The whole history of architecture revolves exclusively around the wall apertures. Through use of the horizontal window reinforced concrete suddenly provides the possibility of maximum illumination.</p>
         </div>
 
         <!--Second Paragaph-->
-        <div id="chapterSpace">
+        <div class="chapterSpace" id="pilotis">
             <h3>PILOTIS</h3>
-            <div id="diagramSpace"></div>
+            <div class="flexContainerTwo" id="pilotisBox">
+                <img src="Assets/Savoye_Elevation.png" alt="Elevation of Villa Savoye" width="1000" height="400">
+            </div>
             <p>To solve a problem scientifically means in the first place to distinguish between its elements. Hence in the case of a building a distinction can immediately be made between the supporting and the non-supporting elements. The earlier foundations, on which the building rested without a mathematical check, are replaced by individual foundations and the walls by individual supports. Both supports and support foundations are precisely calculated according to the burdens they are called upon to carry. These supports are spaced out at specific, equal intervals, with no thought for the interior arrangement of the building. They rise directly from the floor to 3, 4, 6, etc. metres and elevate the ground floor. The rooms are thereby removed from the dampness of the soil; they have light and air; the building plot is left to the garden, which consequently passes under the house. The same area is also gained on the flat roof.</p>
         </div>
 
         <!--Third Paragaph-->
-        <div id="chapterSpace">
+        <div class="chapterSpace" id="facade">
             <h3>FACADE</h3>
-            <div id="diagramSpace"></div>
+            <div class="flexContainerTwo">
+                <img src="Assets/Window_Section.png" alt="Facade section with window" width="1000" height="400">
+            </div>
             <p>By projecting the floor beyond the supporting pillars, like a balcony all round the building, the whole façade is extended beyond the supporting construction. It thereby loses its supportive quality and the windows may be extended to any length at will, without any direct relationship to the interior division. A window may just as well be 10 metres long for a dwelling house as 200 metres for a palatial building (our design for the League of Nations building in Geneva). The façade may thus be designed freely. The five essential points set out above represent a fundamentally new aesthetic. Nothing is left to us of the architecture of past epochs, just as we can no longer derive any benefit from the literary and historical teaching given in schools.</p>
         </div>
 
         <!--Fourth Paragaph-->
-        <div id="chapterSpace">
+        <div class="chapterSpace" id="roof">
             <h3>ROOF</h3>
-            <div id="diagramSpace"></div>
+            <div class="flexContainerTwo">
+                <img src="Assets/Savoye_Garden.png" alt="Elevation of Villa Savoye with garden" width="1000" height="400">
+            </div>
             <p>The flat roof demands in the first place systematic utilization for domestic purposes: roof terrace, roof garden. On the other hand, the reinforced concrete demands protection against changing temperatures. Overactivity on the part of the reinforced concrete is prevented by the maintenance of a constant humidity on the roof concrete. The roof terrace satisfies both demands (a rain-dampened layer of sand covered with concrete slabs with lawns in the interstices ; the earth of the flowerbeds in direct contact with the layer of sand). In this way the rain water will flow off extremely slowly. Waste pipes in the interior of the building. Thus a latent humidity will remain continually on the roof skin. The roof gardens will display highly luxuriant vegetation. Shrubs and even small trees up to 3 or 4 metres tall can be planted. In this way the roof garden will become the most favoured place in the building. In general, roof gardens mean to a city the recovery of all the built-up area.</p>
         </div>
         
         <!--Fifth Paragaph-->
-        <div id="chapterSpace">
+        <div class="chapterSpace" id="plan">
             <h3>PLAN</h3>
-            <div id="diagramSpace"></div>
+            <div class="flexContainerTwo">
+                <img src="Assets/Savoye_Plan.png" alt="First floor plan of Villa Savoye" width="562" height="400">
+            </div>
             <p>The support system carries the intermediate ceilings and rises up to the roof. The interior walls may be placed wherever required, each floor being entirely independent of the rest. There are no longer any supporting walls but only membranes of any thickness required. The result of this is absolute freedom in designing the ground-plan; that is to say, free utilization of the available means, which makes it easy to offset the rather high cost of reinforced concrete construction.</p>
+            <p>Excerpts from Le Corbusier's Vers Une Architecture</p>
         </div>
 
     </body>
